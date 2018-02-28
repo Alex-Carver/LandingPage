@@ -33,18 +33,13 @@ html{
 
 #enter {
   background-color: #000;
-    margin-bottom: -10px;
 }
 
 #enter header{
-  background-image: url(../img/enterBackground.png);
   width: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
   height: 800px;
 }
-
 
 #enter h1{
     color: #000;
@@ -65,6 +60,55 @@ html{
 #enter a:hover{
   color: rgba(0,0,0,0.7);
   text-decoration: none;
+}
+
+
+video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800px;
+}
+
+.fade-in .box{
+  background-image: url(../img/enter.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 800px;
+  z-index: 100;
+}
+
+/* Keyframes for the fade-in */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;
+  opacity: 1 \9; /*just in case ie*/
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 5.5s;
+  -moz-animation-delay: 5.5s;
+  animation-delay: 5.5s;
 }
 
 /*-----Home Page Styles------*/
@@ -504,4 +548,62 @@ section#faqs-content{
   line-height: 40px;
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+/*-----------Responsive styles----------*/
+
+
+/*Responsive Medium Styles*/
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px)  {
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-color: rgba(0,0,0,0.7);
+    margin-top: 20px;
+    color: #fff;
+}
+
+}
+
+/*Responsive Small-md Styles*/
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 667px) { 
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+}
+}
+
+/*Responsive Small Styles*/
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 568px) 
+and (orientation : portrait) { 
+
+}
+
+/*Responsive XSmall Styles*/
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+
+
 }
