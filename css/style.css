@@ -20,8 +20,6 @@
 }
 
 
-
-
 /*-----Enter Page Styles------*/
 *{
   margin: 0;
@@ -39,22 +37,34 @@ html{
 }
 
 #enter header{
-  background-image: url(../img/background1.png);
+  background-image: url(../img/enterBackground.png);
   width: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 750px;
+  height: 800px;
 }
 
 
-#enter h1 {
+#enter h1{
     color: #000;
     font-size: 50px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-family: 'Tanglewood Tales NF',sans-serif;
+    font-weight: 900;
     text-align: center;
     letter-spacing: -2px;
+    text-align: center;
+    margin-top: 600px;
+}
+
+#enter a{
+  color: #000;
+
+}
+#enter a:hover{
+  color: rgba(0,0,0,0.7);
+  text-decoration: none;
 }
 
 /*-----Home Page Styles------*/
