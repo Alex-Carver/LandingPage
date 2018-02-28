@@ -1,326 +1,497 @@
+@font-face {
+    font-family: 'Cheque-Regular';
+    src: url('../fonts/Cheque-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
-  font-family: 'mexcellent';
-  src: url("mexcellentrg.ttf") format("true-type");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Cheque-Black';
+    src: url('../fonts/Cheque-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tanglewood Tales NF';
+    src: url('../fonts/TanglewoodTalesNF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
-body {
-  background-color:#000;
-  
+
+
+/*-----Enter Page Styles------*/
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  min-height: 800px;
+  background-color: #fddf87;
+  margin-bottom: -50px;
 }
 
-header{
-  background:#000;
+#enter {
+  background-color: #000;
+    margin-bottom: -10px;
+}
+
+#enter header{
+  background-image: url(../img/background1.png);
   width: 100%;
-  height:auto;
-  overflow:hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 750px;
+}
+
+
+#enter h1 {
+    color: #000;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -2px;
+}
+
+/*-----Home Page Styles------*/
+
+.navbar {
+    background-color:transparent;
+    height: 150px;
+    width: 100%;
+    z-index: 100;
+    position: relative;
+    margin-top: 0px;
+
+}
+
+.top{
+  margin-right: 50px;
+      display: block;
+    color: #000;
+    font-size: 1.5rem;
+    font-family: 'Tanglewood Tales NF', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.top:hover{
+  color: rgba(0,0,0,.7);
+}
+
+h3{
+    font-size: 2.5rem;
+    font-family: 'Tanglewood Tales NF' , sans-serif;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Tanglewood Tales NF' , sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+.h2{
+    font-size: 2.5rem;
+    font-family: 'Tanglewood Tales NF' , sans-serif;
+    font-weight: 400;
+    color: #000;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+
+h1.display-3{
+  font-family:'Cheque-Regular', sans-serif;
+  line-height: 40px;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-style: bold;
+  color: #000;
+  margin-bottom: 20px;
+
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid #000;
 }
 
 p{
-  color: #DD0048;
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 2px;
-  font-size: 25px;
-  padding-top:80px;
+  font-family: 'Tanglewood Tales NF', sans-serif;
 }
 
-p.copy{
-  color:#DD0048;
-  font-size: 15px;
-  font-family: 'Roboto' , sans-serif;
-  padding-top:30px;
-  margin: 0;
+p.modal-text {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Tanglewood Tales NF', sans-serif;
 }
 
-#text {
-  text-align:center;
-  border:8px solid #40c2cc;
-  border-radius:20px;
-  animation: border-flicker 2s linear infinite;
-  width: 300px;
-
+p.lead{
+  font-weight:400;
+  font-size: 2rem;
+  color: #000;
+  line-height: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-transform: lowercase;
 }
 
-h1{
+ #home-content header{
+  background-image: url(../img/backgroundMain.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 800px;
   margin:0;
-}
-
-h1 a{
-  color:#ff69b4;
-  font-family: 'mexcellent', sans-serif;
-  font-size:30px;
-  letter-spacing:5px;
-  animation: text-flicker 3s linear infinite;
-}
-
-h1 a:hover{
-  text-decoration: none;
-  color: #40c2cc;
-}
-
-.offset {
-  animation: letter-flicker 2s linear infinite;
-}
-
-@keyframes text-flicker {
-  0% {
-    opacity:0.1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  
-  2% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  8% {
-    opacity:0.1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  9% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  12% {
-    opacity:0.1;
-    text-shadow: 0px 0px rgba(242, 22, 22, 1);
-  }
-  20% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
-  }
-  25% {
-    opacity:0.3;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
-  }
-  30% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
-  }
-  
-  70% {
-    opacity:0.7;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
-  }
-  
-  72% {
-    opacity:0.2;
-    text-shadow:0px 0px 29px rgba(242, 22, 22, 1)
-  }
-  
-  77% {
-    opacity:.9;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
-  }
-  100% {
-    opacity:.9;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
-  }
-}
-
-@keyframes border-flicker {
-  0% {
-    opacity:0.1;
-    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
--moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-  }
-  2% {
-    opacity:1;
-    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
--moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-  }
-  4% {
-    opacity:0.1;
-    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
--moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-  }
-  
-  8% {
-    opacity:1;
-    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
--moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-  }
-  70% {
-    opacity:0.7;
-    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
--moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-  }
-  100% {
-    opacity:1;
-    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
--moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-  }
-}
-
-@keyframes letter-flicker {
-  0% {
-    opacity:0.1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  2% {
-    opacity:0.1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  4% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  
-  
-  19% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  21% {
-    opacity:0.1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  23% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  
-  80% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  83% {
-    opacity:0.4;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  87% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-}
-
-@media only screen 
-and (min-width : 768px) 
-and (max-width : 1024px)  {
-
-
-header{
-  background:#000;
-  width: 100%;
-  height:auto;
-  overflow:hidden;
+  border-radius: 0;
+  position: absolute;
+  top:0;
+  left:0;
 }
 
 
-#text {
-  text-align:center;
-  border:8px solid #40c2cc;
-  width:300px;
-  border-radius:20px;
-  animation: border-flicker 2s linear infinite;
+.logo {
+    width: 350px;
+    height: 200px;
+    margin-top: -20px;
 }
 
-p  {
-  color: #DD0048;
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 2px;
-  font-size: 35px;
-}
+.fa{
+ color: #000;
+ margin-right: 10px;
+  margin-left: 10px;
 }
 
-@media only screen 
-and (min-width : 375px) 
-and (max-width : 667px) {
-
-header{
-  background:#000;
-  width: 100%;
-  height: auto;
-  overflow:hidden;
-}
-
-img.gif{
-  width: 100%;
-}
-  h1 {
-  color:#ff69b4;
-  font-family: 'mexcellent', sans-serif;
-  font-size:25px;
-  letter-spacing:5px;
-  animation: text-flicker 3s linear infinite;
-}
-
-#text {
+.jumbotron {
+    background: transparent;
+    width: 100%;
+    border-radius: 0;
+    padding-top: 0px;
+    margin-top: 200px;
     text-align: center;
-    border: 8px solid #40c2cc;
-    width: 300px;
-    border-radius: 20px;
-    animation: border-flicker 2s linear infinite;
+    max-height: 500px;
 }
 
-p {
-    color: #DD0048;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 2px;
+span.two{
+  font-family: 'Tanglewood Tales NF', sans-serif;
+  font-size:1.5em;
+}
+
+.btn-primary {
+    color: #000;
+    border-color: #000;
+    border-width: 3px;
+    background-color: transparent;
+    width: 200px;
+    padding: 5px;
     font-size: 25px;
-}
-p.copy{
-  color:#DD0048;
-  font-size: 12px;
-  font-family: 'Roboto' , sans-serif;
-  padding-top:30px;
-  margin: 0;
+    font-family: 'Tanglewood Tales NF', sans-serif;
 }
 
+.btn-primary:hover{
+    background-color: transparent;
+    border-color: #000;
+    color: rgba(0,0,0,0.5);
+    cursor: pointer;
 }
 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) {
-header{
-  background:#000;
+.btn-primary:focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(0,0,0,.5);
+    box-shadow: 0 0 0 2px rgba(0,0,0,.5);
+}
+
+.modal-body{
+  background-image: url(../img/modalBackground.png);
+  background-position: center;
+  background-size: cover;
   width: 100%;
-  height: auto;
-  overflow:hidden;
+  background-repeat: no-repeat;
 }
 
-img.gif{
+.modal-header{
+  background-image: url(../img/modalHeader.png);
+  background-position: center;
+  background-size: cover;
   width: 100%;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #000;
 }
-  h1 {
-  color:#ff69b4;
-  font-family: 'mexcellent', sans-serif;
-  font-size:25px;
-  letter-spacing:5px;
-  animation: text-flicker 3s linear infinite;
+.tab-pane{
+  margin-top: 20px;
+}
+ .modal-xl {
+   width: 90%;
+   max-width:1200px;
+  }
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 3rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    color: #000;
+    font-family: 'Cheque-Black', sans-serif;
 }
 
-#text {
-    text-align: center;
+.modal-contact{
+  margin-top: 30px;
+}
+
+ .nav-tabs .nav-link.active {
+    color: #000;
+    background-color: transparent;
+    border-color: #000;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #000;
+}
+
+.nav-link2{
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-family: 'Tanglewood Tales NF', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #000;
+    background-color: #DED1A6;
+    border-color: #000;
+}
+
+.nav-tabs .nav-link:hover{
+    border: 1px solid #000;
+
+}
+
+.dropdown-menu {
     position: absolute;
-    border: 8px solid #40c2cc;
-    width: 300px;
-    border-radius: 20px;
-    animation: border-flicker 2s linear infinite;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #292b2c;
+    text-align: left;
+    list-style: none;
+    background-color: #DED1A6;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
 }
 
-p {
-    color: #DD0048;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 2px;
-    font-size: 25px;
-}
-
-p.copy{
-  color:#DD0048;
-  font-size: 12px;
-  font-family: 'Roboto' , sans-serif;
-  padding-top:30px;
-  margin: 0;
-}
+p.number{
+  font-family: 'Tanglewood Tales NF', sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #000;
+  line-height: 40px;
 }
 
 
+footer {
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.copy {
+    color: rgba(0,0,0,1);
+    font-family: 'Tanglewood Tales NF', sans-serif;
+    font-size: 1rem!important;
+}
+
+ol li{
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*----professionals Styles----*/
+
+p.number {
+    margin: 0!important;
+    padding: 0;
+    font-size:1.2rem!important;
+}
+#professionals header{
+  background-image: url(../img/backgroundMain.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 1400px;
+  margin:0;
+  border-radius: 0;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+#professionals .jumbotron{
+    background: transparent;
+    width: 100%;
+    border-radius: 0;
+    padding-top: 0px;
+    margin-top: 150px;
+    text-align: center;
+    max-height: auto;
+}
+
+#professionals p.lead2{
+  font-weight:300;
+  font-size: 1.8rem;
+  color: #000;
+  line-height: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+h1.display-4 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.1;
+    font-family: 'Tanglewood Tales NF', sans-serif;
+    margin-bottom: 30px;
+}
+
+/*--Faqs page Styles*/
+h1.display-5 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.1;
+    font-family: 'Tanglewood Tales NF', sans-serif;
+    margin-bottom: 30px;
+}
+
+#spacer {
+    height: 650px;
+    background-color: #FFF6D8;
+}
+
+#faqs-page header{
+  background-image: url(../img/backgroundMain.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 830px;
+  margin:0;
+  border-radius: 0;
+  position: absolute;
+  top:0;
+  left:0;
+  background-attachment: fixed;
+}
+
+#faqs-page h3 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000;
+    font-size: 2.2rem;
+}
+
+#faqs-page p{
+  font-family: 'Tanglewood Tales NF', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #000;
+  line-height: 40px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+#faqs-page .jumbotron{
+    background: transparent;
+    width: 100%;
+    border-radius: 0;
+    padding-top: 0px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+section#faqs-content{
+  background-image: url('../img/faqsBackground.png');
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 9890px;
+}
+
+#faqs-page span{
+  font-family: 'Cheque-Black', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #000;
+  line-height: 40px;
+}
+
+.footer-nav ul li{
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+}
+
+.bottom{
+    display: block;
+    color: #000;
+    font-size: 1rem;
+    font-family: 'Tanglewood Tales NF', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.bottom:hover{
+  color: rgba(0,0,0,.7);
+}
+
+/*--Contact Styles--*/
+#contact header{
+  background-image: url(../img/backgroundMain.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 1150px;
+  margin:0;
+  border-radius: 0;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+
+#contact p.lead2{
+  font-weight:300;
+  font-size: 1.8rem;
+  color: #000;
+  line-height: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
