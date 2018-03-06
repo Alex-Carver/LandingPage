@@ -21,3 +21,6 @@ $('#myCarousel').carousel({
                 $(this).off("touchmove");
             });
         });
+
+
+
